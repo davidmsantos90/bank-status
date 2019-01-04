@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "npm run babel-nodemon",
+    "start-mongo": "sudo service mongod start",
     "babel-nodemon": "nodemon server.js --exec babel-node",
     "babel-new": "babel server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +13,10 @@
   "author": "david.m.santos90@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^3.0.2",
     "exceljs": "^1.6.2",
     "express": "^4.16.4",
+    "mongoose": "^5.3.13",
     "xlsx-parse-json": "^2.0.2"
   },
   "devDependencies": {
@@ -21,6 +24,6 @@
     "@babel/core": "^7.1.2",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.7"
   }
 }
